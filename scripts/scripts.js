@@ -105,15 +105,15 @@ $(document).ready(function() {
     });
 
     $("#login-btn").click(function() {
-        window.location = "../../views/Login.html";
+        window.location = "views/Login.html";
     });
 
     $("#register-btn").click(function() {
-        window.location = "../../views/register.html";
+        window.location = "views/register.html";
     });
 
     $(".logout").click(function() {
-        window.location = "../../views/FrontPage.html";
+        window.location = "views/FrontPage.html";
     });
 
 });
