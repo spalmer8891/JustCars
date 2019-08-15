@@ -360,14 +360,14 @@
         padding-top: 20px;
     }
     /***********************************************************************************************
-*************************************SmartPhones Page Container*********************************
+*************************************Used Page Container*********************************
 ***********************************************************************************************/
     
-    table#smartphones_tb td.smartphones_tb_data {
+    table#usedcars_tb td.usedcars_tb_data {
         text-align: center;
     }
     
-    table#smartphones_tb td.smartphones_tb_heading {
+    table#usedcars_tb td.usedcars_tb_heading {
         text-align: center;
         font-weight: 600;
     }
@@ -620,7 +620,7 @@
     /* #table_container table, thead, tbody, th, td, tr { 
 	display: block; 
 } */
-    /* Media query for tablet and larger smartphones */
+    /* Media query for tablet and larger usedcars */
     
     @media only screen and (min-width: 481px) {
         /***********************************************************************************************
@@ -918,16 +918,16 @@
             padding-top: 20px;
         }
         /***********************************************************************************************
-*************************************SmartPhones Page Container*********************************
+*************************************usedcars Page Container*********************************
 ***********************************************************************************************/
-        table#smartphones_tb td.smartphones_tb_data:hover {
+        table#usedcars_tb td.usedcars_tb_data:hover {
             /*border: 2px solid red;
 		  cursor:pointer;*/
         }
-        table#smartphones_tb td.smartphones_tb_data {
+        table#usedcars_tb td.usedcars_tb_data {
             text-align: center;
         }
-        table#smartphones_tb td.smartphones_tb_heading {
+        table#usedcars_tb td.usedcars_tb_heading {
             text-align: center;
             font-weight: 600;
         }
@@ -1309,16 +1309,16 @@
             padding-top: 20px;
         }
         /***********************************************************************************************
-*************************************SmartPhones Page Container*********************************
+*************************************usedcars Page Container*********************************
 ***********************************************************************************************/
-        table#smartphones_tb td.smartphones_tb_data:hover {
+        table#usedcars_tb td.usedcars_tb_data:hover {
             /*border: 2px solid red;
 		  cursor:pointer;*/
         }
-        table#smartphones_tb td.smartphones_tb_data {
+        table#usedcars_tb td.usedcars_tb_data {
             text-align: center;
         }
-        table#smartphones_tb td.smartphones_tb_heading {
+        table#usedcars_tb td.usedcars_tb_heading {
             text-align: center;
             font-weight: 600;
         }
@@ -1727,16 +1727,16 @@
             padding-top: 20px;
         }
         /***********************************************************************************************
-*************************************SmartPhones Page Container*********************************
+*************************************usedcars Page Container*********************************
 ***********************************************************************************************/
-        table#smartphones_tb td.smartphones_tb_data:hover {
+        table#usedcars_tb td.usedcars_tb_data:hover {
             border: 2px solid red;
             cursor: pointer;
         }
-        table#smartphones_tb td.smartphones_tb_data {
+        table#usedcars_tb td.usedcars_tb_data {
             text-align: center;
         }
-        table#smartphones_tb td.smartphones_tb_heading {
+        table#usedcars_tb td.usedcars_tb_heading {
             text-align: center;
             font-weight: 600;
         }

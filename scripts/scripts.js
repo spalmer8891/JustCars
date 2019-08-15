@@ -2,12 +2,12 @@ $(document).ready(function() {
 
     //author:Sherwayne Palmer
 
-    $("#inner_container").load("views/Home.html"); //load home page by default
+    $("#inner_container").load("../views/Home.html"); //load home page by default
 
 
     $(".home").click(function() {
 
-        $("#inner_container").load("views/Home.html"); //load home page on click	
+        $("#inner_container").load("../views/Home.html"); //load home page on click	
 
         if (window.matchMedia("(min-width: 769px)").matches) //if media query size min-width is 769px show slider
         {
@@ -16,26 +16,26 @@ $(document).ready(function() {
     });
 
     $(".usedcars").click(function() {
-        $("#inner_container").load("views/UsedCars.html"); //load contact us page on click
+        $("#inner_container").load("../views/UsedCars.html"); //load contact us page on click
         $("#wowslider-container").hide();
     });
 
     $(".aboutus").click(function() {
-        $("#inner_container").load("views/AboutUs.html"); //load contact us page on click
+        $("#inner_container").load("../views/AboutUs.html"); //load contact us page on click
         $("#wowslider-container").hide();
     });
 
     $(".contactus").click(function() {
-        $("#inner_container").load("views/ContactUs.html"); //load contact us page on click
+        $("#inner_container").load("../views/ContactUs.html"); //load contact us page on click
         $("#wowslider-container").hide();
     });
 
     $(".services").click(function() {
-        $("#inner_container").load("views/Services.html"); //load contact us page on click
+        $("#inner_container").load("../views/Services.html"); //load contact us page on click
         $("#wowslider-container").hide();
     });
     $(".partners").click(function() {
-        $("#inner_container").load("views/partners.html"); //load partners us page on click
+        $("#inner_container").load("../views/partners.html"); //load partners us page on click
         $("#wowslider-container").hide();
     });
     $('.main').addClass('highlight'); //set home to highlighted on page load

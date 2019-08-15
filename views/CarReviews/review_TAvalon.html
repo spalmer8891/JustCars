@@ -7,24 +7,20 @@
     <h1>Toyota Avalon</h1>
 
     <div>
-        <img src="images/cars/toyota-avalon2.jpg" class="img_home_middle" />
+        <img src="../../images/cars/toyota-avalon2.jpg" class="img_home_middle" />
     </div>
 
     <button class="collapsible blue light active">Introduction</button>
     <div class="content_colla grey light" style="display: block;">
         <article class="left">
             <p>
-                The Avalon was a new model introduced in February 1994 at the Chicago International Auto Show and
-                launched in late 1994 for the 1995 model year. Development began in 1990 under the 299T project code
-                (ending in 1994), with the design phase concluding in 1991 with internal approval of the final design.
-                Design patents were filed with the Japanese Patent Office on 17 February 1992, under patent number
-                0890183.[8] Built in the same plant as the Camry, the Avalon was based on a stretched XV10 Camry
-                platform featuring a 3.0-liter 1MZ-FE V6 engine making 192 hp (140 kW) and 210 lb⋅ft (285 N⋅m) of
-                torque.
+                The Avalon was a new model introduced in February 1994 at the Chicago International Auto Show and launched in late 1994 for the 1995 model year. Development began in 1990 under the 299T project code (ending in 1994), with the design phase concluding in
+                1991 with internal approval of the final design. Design patents were filed with the Japanese Patent Office on 17 February 1992, under patent number 0890183.[8] Built in the same plant as the Camry, the Avalon was based on a stretched XV10
+                Camry platform featuring a 3.0-liter 1MZ-FE V6 engine making 192 hp (140 kW) and 210 lb⋅ft (285 N⋅m) of torque.
             </p>
         </article>
         <aside class="right text-center">
-            <img class="photo_style_author" src="images/wayne.jpeg">
+            <img class="photo_style_author" src="../../images/wayne.jpeg">
             <p class="no-margin">
                 <a href="#!">
                     <span class="block">Wayne Palmer</span>
@@ -41,16 +37,13 @@
     <div class="content_colla grey light">
         <article class="left">
             <p>
-                The new design is so different from our 2014 Avalon Limited and has some great new features and options.
-                Really love the new interior design and color, so comfortable and classy. All the LED lighting is
-                beautiful with unique sequential turn signals front and rear. The extra safety features are also great,
-                with parking sensors all around & a 360 camera. Also nice that it still has the V6 engine without the
-                stop/start feature and the new 8 speed transmission gives a little better gas mileage. The new heated
-                steering wheel will also be very welcome in the winter.
+                The new design is so different from our 2014 Avalon Limited and has some great new features and options. Really love the new interior design and color, so comfortable and classy. All the LED lighting is beautiful with unique sequential turn signals front
+                and rear. The extra safety features are also great, with parking sensors all around & a 360 camera. Also nice that it still has the V6 engine without the stop/start feature and the new 8 speed transmission gives a little better gas mileage.
+                The new heated steering wheel will also be very welcome in the winter.
             </p>
         </article>
         <aside class="right text-center">
-            <img class="photo_style_author" src="images/wayne.jpeg">
+            <img class="photo_style_author" src="../../images/wayne.jpeg">
             <p class="no-margin">
                 <a href="#!">
                     <span class="block">Wayne Palmer</span>
@@ -70,7 +63,7 @@
     var i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
+        coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
