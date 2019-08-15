@@ -113,7 +113,7 @@ $(document).ready(function() {
     });
 
     $(".logout").click(function() {
-        window.location = "views/FrontPage.html";
+        window.location = "../Index.html";
     });
 
 });
