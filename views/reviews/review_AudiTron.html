@@ -1,0 +1,80 @@
+<!-- This website template was created by: Diego Perez 09/04/2019 -->
+<div class="main_container_tittle blue light white-text">
+    <p>More info</p>
+</div>
+<main>
+    </div>
+    <h1>Audi e-Tron</h1>
+
+    <div>
+        <img src="images/cars/Audi-e-tron2.jpg" class="img_home_middle" />
+    </div>
+
+    <button class="collapsible blue light active">Introduction</button>
+    <div class="content_colla grey light" style="display: block;">
+        <article class="left">
+            <p>
+                Being an electric vehicle first and foremost, range is what people will mostly care about. You’ll be
+                happy to hear the Audi E-Tron will have enough juice from its 95-kWh battery pack for more than 248.5
+                miles (400 kilometers) between charges. The good news is this number is not based on the outgoing NEDC
+                test cycle but on the new and far more stringent Worldwide Harmonized Light Vehicle Test Procedure
+                (WLTP).
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Going farther, faster</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                You want to get where you're going. We do, too. That's why we've harnessed a century of Audi engineering
+                prowess to seamlessly integrate charging technology with a sophisticated battery designed to handle the
+                unique needs of an electric-powered vehicle. And this is just the beginning.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+
+
+</main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

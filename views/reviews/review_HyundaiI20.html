@@ -1,0 +1,81 @@
+<!-- This website template was created by: Diego Perez 09/04/2019 -->
+<div class="main_container_tittle blue light white-text">
+    <p>More Info</p>
+</div>
+<main>
+    </div>
+    <h1>Hyundai i20</h1>
+
+    <div>
+        <img src="images/cars/hyundai-i202.jpg" class="img_home_middle" />
+    </div>
+
+    <button class="collapsible blue light active">Introduction</button>
+    <div class="content_colla grey light" style="display: block;">
+        <article class="left">
+            <p>
+                The Hyundai i20 uses a completely new platform that was created at Hyundai's European technical centre
+                in Rüsselsheim to allow Hyundai to move into Europe's highly competitive subcompact B segment. A 2,525
+                mm (99.4 in) wheelbase helps endow the i20 with a generous passenger cabin. Suspension follows the
+                supermini norm of MacPherson struts at the front and a torsion beam rear end, with rack and pinion
+                steering. A slightly upgraded version of the i20, called the iGen i20, went on sale in India in March
+                2012 onward
+                with tweaked headlamps, new front grille, tail lamps, and fog lamps. It follows the "Fluidic Sculpture"
+                design philosophy with slightly re tuned engines. A new next generation model, known as Elite i20 in
+                India, was launched in India on August 11, 2014, and was launched in Europe in the 2014 Paris Motor Show
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="images/deivid.png" />
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Deivid Mafra</span>
+                    <span>
+                        <time datetime="2019-04-05">Feb 24, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Compact</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                The Hyundai i20 is a supermini car and compact suv produced by the South Korean manufacturer Hyundai
+                since 2008. The i20 made its debut at the Paris Motor Show in October 2008, and sits between the i10 and
+                i30. It is a front wheel drive car, and is available in three and five door versions.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="images/deivid.png" />
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Deivid Mafra</span>
+                    <span>
+                        <time datetime="2019-04-05">Feb 24, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+</main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

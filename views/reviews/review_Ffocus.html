@@ -1,0 +1,80 @@
+<!-- This website template was created by: Diego Perez 12/04/2019 -->
+<div class="main_container_tittle blue light white-text">
+    <p>More info</p>
+</div>
+<main>
+    </div>
+    <h1>Ford Focus</h1>
+
+    <div>
+        <img src="images/cars/ford-focus2.jpg" class="img_home_middle" />
+    </div>
+
+    <button class="collapsible blue light active">Introduction</button>
+    <div class="content_colla grey light" style="display: block;">
+        <article class="left">
+            <p>
+                Engine choices begin with a 2.0L four-cylinder engine making 160 hp and 146 lb-ft of torque that comes
+                standard in S, SE, SEL and Titanium models. The SE sedan can be optioned with a 1.0L turbocharged
+                three-cylinder good for 123 hp and 125 lb-ft. ST models use a 2.0L EcoBoost turbo four-cylinder worth
+                252 hp and 270 lb-ft, and the RS gets its 350 hp and 350 lb-ft from a 2.3L turbo four. The Focus
+                Electric's motor makes 143 hp and 184 lb-ft.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Transmission</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                Transmissions are a five-speed manual in the S and SE, a six-speed manual in SE sedans with the 1.0L
+                engine and a six-speed automatic optional in those cars and standard in SEL and Titanium models. Both ST
+                and RS models get a six-speed manual, with the RS also getting standard AWD. The Focus Electric puts its
+                power to the road through a single-speed automatic transmission.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+
+</main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

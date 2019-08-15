@@ -1,0 +1,155 @@
+/*#container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+td{
+    text-align: center;
+    
+}
+#banner{
+    display: none;
+}
+img {
+	max-width: 100%;
+}
+.sliderimg{
+    display: none;
+}
+#search_box{
+    
+    display: block;
+}
+.ws_bullets{
+    display: none;
+}
+#headerNav {
+    display: none;
+}
+
+#Cellphone_search_box{
+	margin-top:0;
+	margin-left:0;
+    width:100%;
+    padding: 1em;
+	background-color:#80b3ff;
+	color:#FFFFFF;
+}
+
+
+/***********************************************************************************************
+*************************************start of menu button***************************************
+***********************************************************************************************/  
+.dropbtn {
+    /* background-color: #80b3ff; */
+    background-image: url(/Images/ic_burger.jpg);
+    min-width: 3em;
+    min-height: 2.5em;
+    color: white;
+	padding: .5em;
+	font-size: 1.5em;
+    border: none;
+  }
+  
+  .dropdown {
+    
+	float: right;
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+	right: 0;
+	position: absolute;
+	background-color: #80b3ff;
+	min-width: 23em;
+	overflow: auto;
+	font-weight: bold;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 1em 1em;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+  }
+  
+  .show {
+	display:block;
+  }
+/***********************************************************************************************
+*************************************end of menu button*****************************************
+***********************************************************************************************/  
+  .div_space{
+      display:none;
+  }
+
+  .link_cellphone_view{
+    text-decoration: none; 
+    padding: 2%;
+    text-align: center;
+  }
+    
+    
+@media only screen and (min-width: 481px){
+    #container{
+        width: 80%;
+    }
+    #banner{
+        display: block;
+    }
+    #Cellphone_search_box{
+        display: none;
+    }
+    .sliderimg{
+        display: inline;
+    }
+    #search_box{
+        display: block;
+    }
+    .ws_bullets{
+        display: block;
+    }
+    .headerNav{
+        display: block;
+        margin-left:-75%;
+    }
+    #nav ul{
+        list-style:none;
+        width:100%;
+    }
+    #nav li{
+        float:left;
+        background-color: #80b3ff;
+        margin-right:1%;
+        border-radius: 5px 5px 0px 0px;
+        height:25px;
+        width:15%;
+        text-align:center;	
+    }
+    #nav a{
+        text-decoration: none;
+        vertical-align:middle;
+        color:#FFFFFF;
+        display: block;
+        height:100%;
+    }
+    #nav li a:hover{
+        background-color: #D50000;/*#555;*/
+    }
+    .dropdown{
+        display: none;
+    }
+    .div_space{
+        display: block;
+        height:100px;
+        margin-top:25px; /*float area*/
+        background-color: #EAEDF4;
+    }
+
+
+
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../scripts/jquery-3.3.1.min.js"></script>
+    <script src="../scripts/register/register.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="../css/login/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/font-awesome.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/captcha/numberCaptcha.css"> -->
+    <!-- <script src="../scripts/captcha/captchaValidate.js"></script> -->
+    <script src="../"></script>
+
+    <title>Register</title>
+    <meta charset="utf-8">
+
+
+</head>
+
+<input type="hidden" id="pageIdent" value="loginPage">
+<!-- <table class="page_header">
+    <tr>
+        <td>Smartphones</td>
+    </tr>
+</table> -->
+
+<body>
+
+    <div class="container-login100">
+        <div class="card">
+            <div class="card-header text-center">Register</div>
+            <form class="login100-form validate-form flex-sb flex-w">
+                <div class="card-body">
+                    <p class="text-center">All fields below are required unless specified.</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap validate-input" data-validate="Username is required">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="addon-wrapping">@</span>
+                                </div>
+                                <input type="text" class="form-control input100" id="username" name="username"
+                                    placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping"
+                                    required>
+                                    <span class="focus-input100"></span>
+                            </div>
+                        </div>
+
+                        <div class="input-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Email" id="email" name="email"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="addon-wrapping">***</span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                                    aria-describedby="addon-wrapping" id="passwd" name="passwd">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="addon-wrapping">***</span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Repeat Password" id="passwd2" name="passwd2"
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+
+                                <input type="text" class="form-control" placeholder="First Name" aria-label="Username"
+                                    aria-describedby="addon-wrapping" id="fname" name="fname">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+
+                                <input type="text" class="form-control" placeholder="Last Name" aria-label="Username"
+                                    aria-describedby="addon-wrapping" id="lname" name="lname">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+
+                                <input type="text" class="form-control" placeholder="Location (Optional)"
+                                    aria-label="Username" aria-describedby="addon-wrapping" id="location" name="location">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">+/-</label>
+                                </div>
+                                <select class="custom-select" id="gender" name="gender">
+                                    <option value="0" selected>-- Choose Gender --</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">3/4</option>
+                                    <option value="4">1/2</option>
+                                    <option value="5">I don't know</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+
+                                <input type="text" class="form-control" placeholder="Country" aria-label="Username"
+                                    aria-describedby="addon-wrapping" id="country" name="country">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Birthday</label>
+                                </div>
+
+                                <input class="form-control" placeholder="Birthday" type="date" value=""
+                                    id="dob" name="dob">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <button type="button" class="btn btn-primary" id="regist" name="regist">Register</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

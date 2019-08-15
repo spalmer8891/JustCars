@@ -1,0 +1,413 @@
+#container{
+max-width: 100%;
+}
+
+.header_right{
+	
+	background: linear-gradient(rgb(3, 98, 143), rgb(255, 255, 255));
+}
+
+nav{
+	display: none;
+
+	/*I don't think that is necessary create a id selector to nav - we can set the properties of nav directly
+	for example:
+	
+	nav{
+
+	}
+	
+	*/
+
+}
+
+.header_left{
+	float: left;
+	max-width: 15%;
+	max-height: 15%;
+}
+.header_left img{
+	max-width: 100%;
+}
+
+
+
+
+/***********************************************************************************************
+*************************************start of menu button***************************************
+***********************************************************************************************/  
+.dropbtn {
+	background-color: rgb(72, 173, 219);
+	color: white;
+	padding: .5em;
+	font-size: 1.5em;
+	border: none;
+	font-family: Wingdings;
+  }
+  
+  .dropdown {
+	float: right;
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	right: 0;
+	display: none;
+	position: absolute;
+	background-color: rgb(72, 173, 219);
+	min-width: 12em;
+	overflow: auto;
+	font-weight: bold;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 1em 1em;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+  }
+  
+  .show {
+	display:block;
+  }
+/***********************************************************************************************
+*************************************end of menu button*****************************************
+***********************************************************************************************/  
+
+.content{
+	background: linear-gradient(rgb(67, 166, 211), rgb(255, 255, 255));
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.content img{
+	max-width: 70%;
+}
+
+/*footer{
+	margin-top: 1em; 
+	background: linear-gradient( rgb(255, 255, 255),rgba(236, 182, 182, 0.822),rgb(190, 113, 90));
+	
+	background-color: #F44336;
+	color: #000000; 
+	text-align: center; 
+	min-height: 120px;
+}*/
+
+.page-footer {
+	padding-top: 20px;
+	color: #fff;
+	background-color: #ee6e73;
+  }
+  
+.page-footer .footer-copyright {
+	overflow: hidden;
+	min-height: 50px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	padding: 10px 0px;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(51, 51, 51, 0.08);
+}
+
+.red {
+	background-color: #F44336 !important;
+}
+
+.center {
+	text-align: center !important;
+}
+
+/*.footer-copyright {
+	min-height: 50px;
+	align-items: center;
+	display: flex;
+	color: #ffffff;
+	background-color: #ef5350;  #F44336;
+	text-align: center;
+}*/
+
+/*extraction of selectors from index.html*/
+#banner img{
+	max-width: 100%;
+}
+
+/* Styles for Mobile Layout */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+body{
+	background-color:#ffffff;
+	font-family:calibri;
+}
+
+/*Menu*/
+nav li{
+	float: left;
+	background-color: white;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: .5em;
+	margin-top: .2em;
+	width: 100%;
+	display: block;
+	font-family: Calibre, sans-serif, Helvetica, Verdana;
+	list-style:none;
+}
+
+/*blue search box*/
+#search_box{
+	display: none;
+}
+
+a{
+	color: #000000;
+}
+
+h3{
+	text-align: center;
+}
+
+#middle_inner_container{
+	margin: auto;
+	border: 1em solid #f0f0f5;
+	background-color: #f0f0f5;
+	width:100%;
+	height:100%;
+	padding-left:auto;
+}
+
+#left_inner_container{
+	display: none;
+}
+
+#right_inner_container{
+	display: none;	
+}
+
+#left_placeHolder{
+	display: none;
+}
+
+#right_placeHolder{
+	display: none;
+}
+
+/***********************************************
+*****Start of cellphone page - Mobile View *****
+************************************************/
+.cellphone-left{
+	float: left;
+	max-width: 30%;
+	text-align: center;
+}
+
+.cellphone-right{
+	float: right;
+	max-width: 30%;
+	text-align: center;
+}
+
+.cellphone-center{
+	margin: 0 auto;
+	max-width: 30%;
+	text-align: center;
+}
+/***********************************************
+*******End of cellphone page - Mobile View *****
+************************************************/
+
+@media only screen and (min-width: 481px){
+
+.dropbtn {
+	display: none;
+}
+
+nav{
+	display: inline;
+	/*I don't think that is necessary create a id selector to nav - we can set the properties of nav directly
+	for example:
+	
+	nav{
+
+	}
+	
+	*/
+}
+nav li{
+	max-width: 20%;
+	border-radius: 1em 1em 1em 1em;
+	margin-left: 0;
+	margin-right: 0;
+	background-color: rgb(72, 173, 219);
+  	box-shadow: 5px 10px #888888;
+}
+
+nav ul{
+	margin: 0;
+}
+.headerNav{
+	max-width: 100%;
+
+}
+.header_right{
+	max-height: 15%;	
+}
+
+.header_left{
+	max-width: 9%;
+	max-height: 15%;
+}
+	/*blue search box*/
+#search_box{
+	display: inline;
+}
+
+#search_box_content{
+margin-left: 5em;
+padding-top: 3em;	
+}
+
+#left_inner_container{
+	float: left;
+	max-width: 15%;
+	display: inline;
+
+}
+
+#right_inner_container{
+	float: right;
+	max-width: 15%;
+	display: inline;	
+}
+
+#content{
+	margin: 0 auto;
+	max-width: 70%;
+	text-align: center;
+}
+
+#left_placeHolder{
+	display: inline;
+}
+
+#right_placeHolder{
+	display: inline;
+}
+
+.header_left_border{
+
+}
+
+.headerTop{
+
+}
+
+#header{
+	max-width: 100%;
+}
+
+#main{
+	max-width: 100%;
+}
+footer{
+	max-width: 100%;
+}
+
+#MainFooter{
+	max-width: 100%;
+}
+
+}
+
+
+
+@media only screen and (min-width: 769px){
+#container{
+	max-width: 80%;
+}
+	nav{
+		display: inline;
+		/*I don't think that is necessary create a id selector to nav - we can set the properties of nav directly
+		for example:
+		
+		nav{
+	
+		}
+		
+		*/
+	}
+	nav li{
+		
+		border-radius: 1em 1em 0 0;
+		margin-left: .5em;
+		
+	}
+	
+	nav ul{
+		margin: 0;
+	}
+	.headerNav{
+		max-width: 100%;
+	
+	}
+	.header_right{
+		max-height: 15%;	
+	}
+	
+	.header_left{
+		max-width: 9%;
+		max-height: 15%;
+	}
+		/*blue search box*/
+	#search_box{
+		display: inline;
+	}
+	
+	#search_box_content{
+	margin-left: 8em;
+	padding-top: 3em;	
+	}
+		
+	.header_left_border{
+	
+	}
+	
+	.headerTop{
+	
+	}
+	
+	#header{
+		max-width: 100%;
+	}
+	
+	#main{
+		max-width: 100%;
+	}
+	footer{
+		max-width: 100%;
+	}
+	
+	#MainFooter{
+		max-width: 100%;
+	}
+}
+
+

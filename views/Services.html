@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Deivid Mafra, Sherwayne Palmer, Diego Perez 05/03/2019 -->
+<html lang="en">
+
+<head>
+    <title>Services</title>
+    <meta charset="utf-8">
+
+    <script>
+        //author:Sherwayne Palmer
+        $("#faqTB").on('click', 'td.details-control', function() {
+
+            var row = $(this).attr('data-rownum');
+
+
+            var upclass = 'fa fa-angle-double-up';
+            var downclass = 'fa fa-angle-double-down';
+
+            $('#cascade_tb_sub_row_' + row).slideDown("medium"); //apply effect to div
+            if ($('#details-control_' + row).hasClass(downclass)) {
+                $('#details-control_' + row).removeClass(downclass);
+                $('#details-control_' + row).addClass(upclass);
+                $('#cascade_tb_row_' + row).show(); //show second row		
+            } else {
+                $('#cascade_tb_sub_row_' + row).slideUp("medium"); //apply effect to div
+                $('#cascade_tb_sub_row_' + row).hide();
+                $('#cascade_tb_row_' + row).hide(); //hide  first row
+                $('#details-control_' + row).removeClass(upclass);
+                $('#details-control_' + row).addClass(downclass);
+            }
+        });
+    </script>
+
+</head>
+
+<input type="hidden" id="pageIdent" value="services">
+<table class="page_header">
+    <tr>
+        <td>Our Services</td>
+    </tr>
+</table>
+
+<table id="faqTB">
+
+    <tbody>
+        <!--row 1 -->
+        <tr class="faqqstrow">
+            <td title="Click to view More" class="details-control" data-rownum="1" style="text-align: center;cursor: pointer">
+                <span id="details-control_1" class="fa fa-angle-double-down fa-2x" style="color:#0C2449">
+                    <!--<img class="img_faq_cascade" src="images/arrow_down.png"
+										alt="" title="" />--> </span>
+            </td>
+            <!--  column for cascade -->
+            <td>
+                Vehicle Maintenance Service
+            </td>
+        </tr>
+        <tr id="cascade_tb_row_1" class="faqansrow" style="display:none">
+            <td></td>
+            <!--column for cascade-->
+            <td>
+                <div id="cascade_tb_sub_row_1" style="display:none">
+                    <p>
+                        We offer it for used cars sold by us. These plans cover, for a specific amount of time or mileage, the scheduled maintenance spelled out in the vehicle owner's manual.
+                    </p>
+                    <p>Contact us for special price!</p>
+                </div>
+            </td>
+
+        </tr>
+        <!--row 2 -->
+        <tr class="faqqstrow">
+            <td title="Click to view More" class="details-control" data-rownum="2" style="text-align: center;cursor: pointer"> <span id="details-control_2" class="fa fa-angle-double-down fa-2x" style="color:#0C2449"></span>
+            </td>
+            <!--  column for cascade -->
+            <td>
+                Vehicle Repair
+            </td>
+        </tr>
+        <tr id="cascade_tb_row_2" class="faqansrow" style="display:none">
+            <td></td>
+            <!--column for cascade-->
+            <td>
+                <div id="cascade_tb_sub_row_2" style="display:none">
+                    <p>Our certified technicians know cars inside and out. We utilize the latest diagnostic tools, service and repair techniques to keep your car performing in peak condition.</p>
+                    <p>Contact us for special price!</p>
+                </div>
+            </td>
+
+        </tr>
+
+        <!--row 3 -->
+        <tr class="faqqstrow">
+            <td title="Click to view More" class="details-control" data-rownum="3" style="text-align: center;cursor: pointer"> <span id="details-control_3" class="fa fa-angle-double-down fa-2x" style="color:#0C2449"></span>
+            </td>
+            <!--  column for cascade -->
+            <td>
+                Car Parts
+            </td>
+        </tr>
+        <tr id="cascade_tb_row_3" class="faqansrow" style="display:none">
+            <td></td>
+            <!--column for cascade-->
+            <td>
+                <div id="cascade_tb_sub_row_3" style="display:none">
+                    <p>Check out our monthly offers on selected parts, tools and accessories and save on your car's maintenance
+                    </p>
+                    <p>Contact us for special price!</p>
+                </div>
+            </td>
+
+        </tr>
+
+        <!--row 4 -->
+        <tr class="faqqstrow">
+            <td title="Click to view More" class="details-control" data-rownum="4" style="text-align: center;cursor: pointer"> <span id="details-control_4" class="fa fa-angle-double-down fa-2x" style="color:#0C2449"></span>
+            </td>
+            <!--  column for cascade -->
+            <td>
+                Body Repair Service
+            </td>
+        </tr>
+        <tr id="cascade_tb_row_4" class="faqansrow" style="display:none">
+            <td></td>
+            <!--column for cascade-->
+            <td>
+                <div id="cascade_tb_sub_row_4" style="display:none">
+                    <p>We offer paintwork repairs to scratches, scuffs and dents, as well as repairs to the bodies of vehicles damaged by collisions</p>
+                    <p>Contact us for special price!</p>
+                </div>
+            </td>
+
+        </tr>
+
+    </tbody>
+</table>
+
+</html>
