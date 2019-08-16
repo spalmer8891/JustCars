@@ -54,7 +54,7 @@ $(document).ready(function() {
                 if (username.toLowerCase() == key.toString().toLocaleLowerCase() && password == value && isUser == false) {
                     isUser = true;
                     if ($('ul').validate() && isUser == true) {
-                        window.location = "JustCars/SiteMaster.html";
+                        window.location = "SiteMaster.html";
                         break;
                     } else {
 
