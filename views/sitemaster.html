@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Deivid Mafra, Sherwayne Palmer, Diego Perez, Yash Deepak 05/03/2019 -->
+<html lang="en">
+
+<head>
+    <link href="siteicon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/wowslider_style.css" />
+    <script src="../scripts/jquery-3.3.1.min.js"></script>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/wowslider.js"></script>
+    <script src="../scripts/wowslider_script.js"></script>
+
+    <title>CellTechReviews.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <div class="topnav" id="mainNav">
+                <a href="#home" id="home" class="home main">Home</a>
+                <a href="#usedcars" id="usedcars" class="usedcars">Used Cars</a>
+                <!-- <div class="dropdown">
+                <button class="dropbtn">Services 
+					  <i class="fa fa-caret-down"></i>
+					</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div> -->
+                <a href="#services" id="services" class="services">Services</a>
+                <a href="#aboutus" id="aboutus" class="aboutus">About Us</a>
+                <a href="#contactus" id="contactus" class="contactus">Contact Us</a>
+                <a href="#logout" id="logout" class="logout">Logout</a>
+                <!--<i class="icon fa fa-bars" onclick="myFunction()"></i>-->
+                <a href="#" class="icon" onclick="mobileDropDown()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="mobile_nav_bar">
+            <div class="dropdown">
+                <button onclick="navButton()" class="dropbtn fa fa-bars"></button>
+
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home" id="home" class="home main">Home</a>
+                    <a href="#usedcars" id="usedcars" class="usedcars">Used Cars</a>
+                    <a href="#services" id="services" class="services">Services</a>
+                    <a href="#aboutus" id="aboutus" class="aboutus">About Us</a>
+                    <a href="#contactus" id="contactus" class="contactus">Contact Us</a>
+                    <a href="#logout" id="logout" class="logout">Logout</a>
+                </div>
+            </div>
+    </header>
+
+    <div>
+
+        <!-- <div class="div_space"> </div> -->
+
+        <div id="wowslider-container">
+            <div class="ws_images">
+                <ul>
+                    <li>
+                        <a href="#"><img class="sliderimg" src="../images/cars/slide/car2.jpg" alt="" id="wows_1" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="sliderimg" src="../images/cars/slide/car3.jpg" alt="" id="wows_2" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="sliderimg" src="../images/cars/slide/car6.jpg" alt="" id="wows_5" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ws_bullets">
+                <div>
+                    <a href="#">
+                        <!-- <img src="tooltips/slide1new.jpg" alt="" /> -->
+                        1</a>
+                    <a href="#">
+                        <!-- <img src="tooltips/slide2new.jpg"
+								alt="" /> -->
+                        2</a>
+                    <a href="#">
+                        <!-- <img src="tooltips/slide3new.jpg" alt="" /> -->
+                        3</a>
+
+                </div>
+            </div>
+            <a href="#" class="ws_frame"></a>
+            <div class="ws_shadow"></div>
+        </div>
+
+    </div>
+
+    <div id="page_container">
+        <main>
+            <div id="inner_container" class="shadow">
+                <!-- page content placed here-->
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+
+        <table id="tb_footer">
+            <tr>
+                <td>
+                    <h3>Contact Us</h3>
+                </td>
+                <td>
+                    <h3>Follow Us</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a class="white-text" href="#">1457 London Road, Sarnia, ON N7S 6K4</a></li>
+                        <li><a class="white-text" href="#">400-265 Yorkland Blvd, Toronto, ON M2J
+								1S5</a></li>
+                        <li><a class="white-text" href="mailto:celltechreviews@celltechreviews.com">celltechreviews@celltechreviews.com</a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <a href="#"> <img class="img_social" src="../images/icon_fb.png" alt="" title="" /> </a>
+                    &nbsp;
+                    <a href="#"> <img class="img_social" src="../images/icon_insta.png" alt="" title="" /> </a>
+                    &nbsp;
+                    <a href="#"> <img class="img_social" src="../images/icon_twitter.png" alt="" title="" /> </a>
+                    &nbsp;
+                    <a href="#"> <img class="img_social" src="../images/icon_youtube.png" alt="" title="" /> </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="#" class="home">Home </a> | <a href="#" class="usedcars"> Used Cars </a> | <a href="#" class="services"> Services </a> | <a href="#" class="aboutus"> About Us </a> |
+                    <a href="#" class="contactus"> Contact Us </a> | <a href="#" class="partners"> Partners </a>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    &copy; All Rights Reserved - Just Cars Auto 2019
+                </td>
+            </tr>
+        </table>
+
+    </footer>
+
+
+
+</body>
+
+</html>
