@@ -54,7 +54,7 @@ $(document).ready(function() {
                 if (username.toLowerCase() == key.toString().toLocaleLowerCase() && password == value && isUser == false) {
                     isUser = true;
                     if ($('ul').validate() && isUser == true) {
-                        window.location.href = "../../views/MasterPage.html";
+                        window.location.href = "../../views/sitemaster.html";
                         break;
                     } else {
 
