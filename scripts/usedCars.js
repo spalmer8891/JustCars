@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     function goPage(identifier) {
         //alert("aca vamos " + identifier);
-        $("#inner_container").load("../../views/CarReviews/review_" + identifier + ".html");
+        $("#inner_container").load("CarReviews/review_" + identifier + ".html");
         $("#wowslider-container").hide();
     }
 
